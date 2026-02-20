@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+
+    <style>
+        button {
+            display: block;
+            margin: auto;
+            width: 10rem;
+            height: 2rem;
+        }
+
+        :modal {
+            background-color: beige;
+            border: 2px solid burlywood;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        Would you like to see a new random Number? <br>
+        Then, Click on Show me
+    </p>
+    <button id="showNumber">Show Me</button>
+
+    <dialog id="favDialog">
+        <form method="dialog">
+            <p>Lucky number is: <strong id="number"></strong> </p>
+            <button>Close dialog</button>
+        </form>
+    </dialog>
+</body>
+</html>

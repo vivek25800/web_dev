@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel {
+    border: #000 solid 2px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    border: #000 solid 2px;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .course-section {
+    border: #000 solid 2px;
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .pagination {
+    border: #000 solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination li a {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .pagination li a:hover {
+    background-color: #45a049;
+  }
+  
+  .pagination .prev-btn,
+  .pagination .next-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination .prev-btn a,
+  .pagination .next-btn a {
+    padding: 10px 20px;
+  }
+  
+  .pagination .prev-btn a:hover,
+  .pagination .next-btn a:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 5px 0;
+  }
+  

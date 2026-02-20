@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .spinner{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 10px solid rgb(255, 255, 255);
+            border-top-color: #007bff;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        #myId {
+            color: green;
+            background-color: #007bff;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="spinner"></div>
+
+    <div id="myId">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quod nulla saepe similique et nam vitae eos quidem dignissimos? 
+            Dicta praesentium veniam voluptatibus eveniet explicabo soluta 
+            nihil aspernatur possimus laboriosam sequi dignissimos voluptatum, 
+            architecto et minima! Velit dolorem, cum nisi temporibus soluta in 
+            laudantium consequuntur ea iusto maxime asperiores deserunt autem.</p>
+    </div>
+    
+</body>
+</html>

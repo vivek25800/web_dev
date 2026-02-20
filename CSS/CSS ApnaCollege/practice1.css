@@ -1,0 +1,85 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+/* div {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+} */
+
+/* for Traffic Light */
+/* 
+.outer {
+    margin: 15px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(82, 79, 79);
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#one {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    border: 2px solid black;
+    
+}
+
+#two {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#three {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: start;
+    text-decoration: blue underline;
+} */
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    
+}
+
+#logo {
+    color: #f08804;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+button {
+    background-color: #f08804;
+}
+
+input {
+    color: black;
+}
+
+a{
+    margin-right: 200px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}

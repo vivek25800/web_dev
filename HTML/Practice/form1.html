@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1 Example</title>
+</head>
+<body>
+
+    <form>
+
+        <fieldset>
+
+            <label for="firstname">First Name: </label>
+            <input type="text" name="firstname" id="firstname"  placeholder="Enter first name" required />
+
+            <label for="lastname">Last Name: </label>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter last name" required />
+            <br/>
+            <br/>
+
+            <label for="address#1">Address #1: </label>
+            <input type="text" name="address#1" id="address#1" placeholder="Enter Address #1" required />
+
+            <label for="address#2">Address #2: </label>
+            <input type="text" name="address#2" id="address#2" placeholder="Enter Address #2" required />
+
+            <label for="city">City: </label>
+            <input type="text" name="city" id="city" placeholder="Enter City " required />
+            <br/>
+            <br/>
+
+            <label for="zip">Zip: </label>
+            <input type="text" name="zip" id="zip" placeholder="Enter zip code" required />
+
+            <label for="state">State: </label>
+            <input type="text" name="state" id="state" placeholder="Enter State name" required />
+
+            <label for="country">Country: </label>
+            <input type="text" name="country" id="country" placeholder="Enter Country" required />
+
+        </fieldset>
+        <br/>
+
+        <fieldset>
+
+            <label for="product">Product: </label>
+            <select name="product" id="product">
+                <option value="oil">Oil</option>
+                <option value="vegetables">Vegetable</option>
+                <option value="biscuits">Biscuits</option>
+                <option value="namkeen">Namkeen</option>
+                <option value="facewash">Fashwash</option>
+            </select>
+            <br/>
+            <br/>
+
+            <label for="datePurchased">Date Purchased: </label>
+            <input type="date" name="date" id="datePurchased" required />
+            <br/>
+            <br/>
+
+            <label for="usedfor">Used for: </label>
+            <br/>
+
+            
+            <input type="radio" name="radio" id="home">
+            <label for="home">Home</label>
+            <br/>
+            <input type="radio" name="radio" id="business">
+            <label for="business">Business</label>
+            <br/>
+            <input type="radio" name="radio" id="government">
+            <label for="government">Government</label>
+            <br/>
+            <input type="radio" name="radio" id="education">
+            <label for="education">Education</label>
+            <br/>
+            <input type="radio" name="radio" id="other">
+            <label for="other">Other</label>
+            <br/>
+            <br/>
+
+            <label for="system">System (check all that apply): </label>
+            <br/>
+
+            <input type="checkbox" name="windows" id="windows">
+            <label for="windows">Windows</label>
+            <br/>
+            <input type="checkbox" name="mac" id="mac">
+            <label for="mac">Macintosh</label>
+            <br/>
+            <input type="checkbox" name="unix" id="unix">
+            <label for="unix">Unix</label>
+            <br/>
+            <input type="checkbox" name="others" id="others">
+            <label for="others">Other</label>
+
+
+        </fieldset>
+        <br/>
+
+        <fieldset>
+
+            <label for="comments">Comments?:</label>
+            <br/>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Write your comments here..."></textarea>
+            <br/>
+
+            <input type="submit" value="Send Registration">
+
+            <input type="submit" value="Cancel">
+            
+        </fieldset>
+
+
+    </form>
+    
+</body>
+</html>

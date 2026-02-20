@@ -1,0 +1,31 @@
+
+p {
+
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    font-size: large;
+    font-weight: 400;
+    
+}
+
+#heading1 {
+    text-align: center;
+    color:rgb(252, 0, 0);
+}
+
+.paraClass1 {
+    background-color: yellow;
+    color: blue;
+}
+
+.paraClass2 {
+    background-color: rgb(66, 203, 233);
+}
+
+.paraClass3 {
+    background-color: rgba(206, 82, 220, 0.499);
+}
+
+#firstHeading {
+    background-color: #ffac89;
+}

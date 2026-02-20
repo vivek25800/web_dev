@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+/* .box{
+    height: 500px;
+    width: 500px;
+    background-color: crimson;
+}
+.inner{
+    height: 50vh;
+    width: 50vw;
+    background-color: royalblue;
+} */
+
+/* h1{
+    font-size: 100px;
+    font-size: 7vmin;
+} */
+
+#parent{
+    background-color: #dadada;
+    font-size: 40px;
+}
+
+h1{
+    font-size: 1em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form.form_example {
+            display: table;
+        }
+        div.form_example {
+            display: table-row;
+        }
+        label, input {
+            display: table-cell;
+            margin-bottom: 10px;
+        }
+        label {
+            padding-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+   <fieldset>
+    <legend>HTML Form Dummy</legend>
+
+    <form action="" method="get" class="form_example">
+
+        <div class="form_example">
+            <label for="name">User Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Username" required />
+        </div>
+
+        <div class="form_example">
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password" placeholder="Enter Password" required />
+        </div>
+
+        <div class="form_example">
+            <label for="email_id">Choose Color:</label>
+            <input type="color" name="email_id" id="email_id" placeholder="Enter Email Id" required />
+        </div>
+
+        <div class="form_example">
+            <label for="enter_url">Enter URL:</label>
+            <input type="url" name="enter_url" id="enter_url" placeholder="Enter URL" required />
+        </div>
+
+        <div class="form_example">
+            <label for="cars">Choose a Car:</label>
+            <select name="cars" id="cars" size="3" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="volkswagon">Volkswagon</option>
+                <option value="mustang">Mustang</option>
+                <option value="astinMartin">AstinMartin</option>
+            </select>
+
+        </div>
+
+        <div class="form_example">
+            <label for="textarea1">Tell us your story:</label>
+            <textarea name="textarea1" id="textarea1" cols="30" rows="10" placeholder="Enter text here..."></textarea>
+        </div>
+
+        <div class="form_example">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+   </fieldset>
+
+
+    <!-- <form action="">
+
+    <label for="email">Email Id:</label>
+    <input type="text" id="email" placeholder="Enter Email ID">
+    <br/>
+    <br/>
+    <label for="password">Password:</label>
+    <input type="text" id="password" placeholder="Enter password">
+    <br/>
+    <br/>
+    <button>Submit1</button>
+    <input type="submit" value="Submit">
+
+    <input type="radio" id="male">
+    <label for="male">Male</label>
+    <br/>
+    <br/>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob">
+    <br/>
+    <br/>
+    <label for="lang">Language</label>
+    <br/>
+    <br/>
+    <input type="checkbox" id="language">
+    <label for="language">Hindi</label>
+    <input type="checkbox" id="english">
+    <label for="english">English</label>
+
+</form> -->
+</body>
+</html> 

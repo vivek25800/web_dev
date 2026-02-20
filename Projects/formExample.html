@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+
+    <h2>Personal Details</h2>
+    
+    <form action="">
+
+        <label for="name"><b>Name:</b></label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required />
+        <br/>
+        <br/>
+
+        <label for="password"><b>Password:</b></label>
+        <input type="password" name="password" id="password" placeholder="Enter password" required />
+        <br/>
+        <br/>
+
+        <label for="email"><b>Email Id:</b></label>
+        <input type="email" name="email" id="email" placeholder="Enter Email Id" required />
+        <br/>
+        <br/>
+
+        <label for="contact"><b>Contact:</b></label>
+        <input type="tel" name="contact" id="contact" placeholder="Enter phone no." required />
+        <br/>
+        <br/>
+
+        <label for="gender"><b>Gender:</b></label>
+
+        <input type="radio" name="radio" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="radio" id="female">
+        <label for="female">Female</label>
+
+        <input type="radio" name="radio" id="other">
+        <label for="other">Others</label>
+        <br/>
+        <br/>
+
+        <h2>Educational Qualification</h2>
+
+        <label for="degree"><b>Degree:</b></label>
+        <select name="degree" id="degree">
+            <option value="graduation">Under Graduate</option>
+            <option value="postGraduation">Post Graduate</option>
+            <option value="phd">Phd</option>
+            <option value="scholar">Scholar</option>
+        </select>
+        <br/>
+        <br/>
+
+        <label for="engineering"><b>Engineering:</b></label>
+        <select name="engineering" id="engineering">
+            <option value="cse">Computer Science Engineering</option>
+            <option value="mca">Computer Application</option>
+            <option value="ece">Electrical Computer Engineering</option>
+            <option value="mechanical">Mechanical Engineering</option>
+        </select>
+        <br/>
+        <br/>
+
+        <label for="hobbies"><b>Hobbies:</b></label>
+
+        <input type="radio" name="hobbies1" id="hobbies1">
+        <label for="hobbies1">Playing Chess</label>
+
+        <input type="radio" name="readBooks" id="readBooks">
+        <label for="readBooks">Reading Books</label>
+        <br/>
+        <br/>
+
+        <label for="resume1">Attache Resume:</label>
+        <input type="file" name="resume1" id="resume1">
+        <br/>
+        
+
+        <h2>Address</h2>
+
+        <textarea name="textarea1" id="textarea1" cols="30" rows="10" placeholder="Write here..."></textarea>
+
+        <input type="submit" value="SUBMIT">
+
+    </form>
+
+</body>
+</html>

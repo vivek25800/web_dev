@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        .container{
+            background-color: aqua;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+        }
+        @media (max-width: 500px) {
+            .container{
+                background-color: blue;
+            }
+        }
+
+        @media (any-hover: hover) {
+            a:hover{
+                background-color: chartreuse;
+            }
+        }
+        input[type="checkbox"]:checked{
+            background-color: blue;
+        }
+        @media(any-pointer: fine){
+            input[type="checkbox"]{
+                appearance: none;
+                width: 15px;
+                height: 15px;
+                border: 1px solid red;
+            }
+        }
+        @media (any-pointer: coarse){
+            input[type="checkbox"]{
+                appearance: none;
+                width: 15px;
+                height: 15px;
+                border: 1px solid yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        Welcome to the Narnia Group
+    </div>
+
+    <a href="https://www.google.com">Try hover on me</a>
+
+    <input type="checkbox" id="test" name="checkbox" />
+    <label for="test">Look at me!</label>
+    
+</body>
+</html>

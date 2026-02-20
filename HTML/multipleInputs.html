@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Entry Input</title>
+  <style>
+    .tags-input {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid #ccc;
+      padding: 5px;
+      min-height: 40px;
+    }
+    
+    .tags-input input {
+      border: none;
+      outline: none;
+      flex: 1;
+      min-width: 150px;
+    }
+    
+    .tag {
+      background-color: #e2e2e2;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin: 2px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .tag span {
+      margin-right: 5px;
+    }
+    
+    .tag .close {
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      padding: 0 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="tags-input" id="tags-input">
+  <input type="text" id="employee-input" placeholder="Enter Employee IDs...">
+</div>
+
+<script>
+  const tagsInput = document.getElementById('tags-input');
+  const input = document.getElementById('employee-input');
+  let tags = [];
+
+  // Function to create a tag element
+  function createTag(tagValue) {
+    const div = document.createElement('div');
+    div.className = 'tag';
+    
+    const span = document.createElement('span');
+    span.textContent = tagValue;
+    
+    const closeBtn = document.createElement('span');
+    closeBtn.className = 'close';
+    closeBtn.textContent = 'x';
+    closeBtn.onclick = function () {
+      removeTag(tagValue);
+    };
+    
+    div.appendChild(span);
+    div.appendChild(closeBtn);
+    
+    return div;
+  }
+
+  // Function to remove tag
+  function removeTag(tagValue) {
+    tags = tags.filter(tag => tag !== tagValue);
+    updateTags();
+  }
+
+  // Update tags visually
+  function updateTags() {
+    tagsInput.innerHTML = '';
+    tags.forEach(tag => {
+      tagsInput.appendChild(createTag(tag));
+    });
+    tagsInput.appendChild(input);
+  }
+
+  // Handle input events
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ',') {
+      e.preventDefault();
+      const value = input.value.trim();
+      if (value && !tags.includes(value)) {
+        tags.push(value);
+        updateTags();
+      }
+      input.value = '';
+    }
+  });
+
+  // Optional: Add backspace to remove the last tag
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Backspace' && input.value === '') {
+      removeTag(tags[tags.length - 1]);
+    }
+  });
+</script>
+
+</body>
+</html>

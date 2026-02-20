@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root{
+            --primary-color: aquamarine;
+            --custom-width: 400px;
+            --custom-height: 400px;
+        }
+
+        .container{
+            background-color: beige;
+            height: 600px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: var(--primary-color);
+            border: 1px solid black;
+            width: var(--custom-width);
+            height: var(--custom-height);
+            margin: 10px;
+            padding: 10px;
+            /* box-shadow: 10px 10px brown; */
+            /* box-shadow: 15px 15px 10px brown; */
+            /* box-shadow: 15px 15px 10px 10px brown; */
+            /* box-shadow: inset 5em 1em gold; */
+            /* box-shadow: 15px 15px red, -15px -15px green; */
+            /* box-shadow: 3px 3px red inset, -1em 0 0.4em olive; */
+            text-align: center;
+
+            /* Text Shadow example */
+            /* text-shadow: 1px 1px 2px black; */
+            /* text-shadow: #fc0 3px 3px 3px; */
+            /* text-shadow: 1px 1px yellow; */
+            /* text-shadow: white 2px 2px; */
+            /* text-shadow: 1px 1px 2px red; */
+            
+        }
+
+        #head1{
+            text-shadow: 1px 1px 2px red, 2px 2px 2px blue, 3px 3px 2px yellow;
+        }
+
+        blockquote {
+           padding: 20px;
+           box-shadow:
+             inset 0 -3em 3em rgb(0 200 0 / 30%),
+             0 0 0 2px white,
+             0.3em 0.3em 1em rgb(200 0 0 / 60%); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <img src="logoLion.png" alt="Lion" height="100px" width="150px">
+            <h2 id="head1">Welcome to the Narnia Group</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Enim tempore eaque, alias est natus culpa nisi commodi nam 
+                distinctio, quas corporis. Alias nostrum explicabo quasi 
+                excepturi nulla expedita! Aut, sunt.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quisquam, eum perferendis voluptates sapiente enim incidunt?
+            </p>
+        </div>
+
+    </div>
+
+    <blockquote>
+        <q>
+          You may shoot me with your words,<br />
+          You may cut me with your eyes,<br />
+          You may kill me with your hatefulness,<br />
+          But still, like air, I'll rise.
+        </q>
+        <p>&mdash; Maya Angelou</p>
+      </blockquote>
+    
+</body>
+</html>

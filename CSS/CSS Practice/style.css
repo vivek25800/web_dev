@@ -1,0 +1,83 @@
+.example {
+    background-color: rgb(147, 255, 255);
+}
+
+body {
+    /* background-image: url("logoLion.png");
+    background-color: lightblue;
+    background-repeat: repeat-x;
+    background-position: left top;
+    margin-right: 200px;
+    background-attachment: scroll; */
+    height: 5000px;
+
+}
+
+.boxOne {
+    border-top-style: solid;
+    border-right-style: dotted;
+    border-bottom-style: dashed;
+    border-left-style: double;
+    border-color: black;
+    width: 200px;
+    height: 200px;
+}
+.boxTwo {
+    border: dashed red 2px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+.boxThree {
+    border: dotted blue 2px;
+    width: 200px;
+    height: 200px;
+}
+.boxFour {
+    border: double brown 4px;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}
+div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    position: sticky;
+}
+
+h1 {
+    /* border-left: solid red 5px;
+    border-right: solid blue 5px; */
+    display: inline;
+    border-bottom: solid red 5px;
+}
+
+.para1 {
+    width: 500px;
+    height: 200px;
+    border: solid black 2px;
+    border-radius: 15px;
+    /* margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px; */
+    margin: 100px 150px 100px 80px;
+}
+
+p {
+    /* padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px; */
+
+    /* padding: 50px 30px 50px 50px; */
+    padding: 25px;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Three</title>
+</head>
+<body>
+
+    <h2>Complex Form</h2>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information:</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required/>
+            <br/>
+            <br/>
+
+            <label for="email">Email:</label>
+            <input type="email" name="eamil" id="name" placeholder="Your EmailID" required/>
+            <br/>
+            <br/>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Your Phone no" required/>
+            <br/>
+            <br/>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" placeholder="Your DOB" required/>
+            <br/>
+            <br/>
+
+            <label for="gender">Gender:</label>
+            <br/>
+            <input type="radio" name="radio" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="radio" id="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="radio" id="others">
+            <label for="others">Others</label>
+            <br/>
+            <br/>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="u.s">USA</option>
+                <option value="india">India</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+            </select>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+
+            <legend>Address:</legend>
+
+            <label for="address">Street:</label>
+            <input type="text" name="address" id="address" placeholder="Enter Street area">
+            <br/>
+            <br/>
+
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" placeholder="Enter City name">
+            <br/>
+            <br/>
+
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state" placeholder="Enter State name">
+            <br/>
+            <br/>
+
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" name="zipcode" id="zipcode" placeholder="Enter Zip Code">
+
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>Other Information:</legend>
+            <label for="comments">Comments:</label>
+            <br/>
+            <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Write here..."></textarea>
+            <label for="terms-condi">I agree to the term of Service</label>
+            <input type="checkbox" name="check" id="terms-condi"/><br/>
+        </fieldset>
+        <br/>
+
+        <input type="submit" value="Submit Information">
+    </form>
+    
+</body>
+</html>

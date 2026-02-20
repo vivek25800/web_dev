@@ -1,0 +1,11 @@
+h1{
+    background-color: aqua;
+    border: 1px solid #000000;
+}
+@media (max-width: 400px){
+    h1{
+        background-color: black;
+        color: #ffffff;
+        border: 1px solid red;
+    }
+}

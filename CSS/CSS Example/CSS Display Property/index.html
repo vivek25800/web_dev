@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            border: 2px solid red;
+            margin: 10px;
+            width: 500px;
+            
+        }
+        p{
+            color: darkblue;
+        }
+        p.example1{
+            display: none;
+        }
+        p.example2{
+            /* display: inline; */
+            display: flex;
+        }
+        p.example3{
+            /* display: block; */
+            display: inline-flex;
+        }
+        p.example4{
+            display: inline-block;
+            
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <h1>The CSS Display Property</h1>
+
+    <div>
+        <h2>Property 1: None</h2>
+        Lorem ipsum dolor, sit amet <p class="example1">consectetur adipisicing</p> elit. Eos, doloribus!
+    </div>
+
+    <div>
+        <h2>Property 2: Inline</h2>
+        Lorem ipsum dolor, sit amet <p class="example2">consectetur adipisicing</p> elit. Eos, doloribus!
+    </div>
+
+    <div>
+        <h2>Property 3: Block</h2>
+        Lorem ipsum dolor, sit amet <p class="example3">consectetur adipisicing</p> elit. Eos, doloribus!
+    </div>
+
+    <div>
+        <h2>Property 4: Inline-Block</h2>
+        Lorem ipsum dolor, sit amet <p class="example4">consectetur adipisicing</p> elit. Eos, doloribus!
+    </div>
+    
+</body>
+</html>

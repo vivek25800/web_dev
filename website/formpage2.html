@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobApplication</title>
+</head>
+<body>
+
+    <h2>Job Application</h2>
+
+    <form action="">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required />
+        <br/>
+        <br/>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" required />
+        <br/>
+        <br/>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+        <br/>
+        <br/>
+
+        <label for="resume">Resume:</label>
+        <br/>
+        <input type="file" name="resume" id="resume" accept=".pdf,.docx,.docs" required />
+        <br/>
+        <br/>
+
+        <label for="experience">Experience(years):</label>
+        <br/>
+        <input type="number" name="experience" id="experience" min="0" max="20">
+        <br/>
+        <br/>
+
+        <fieldset>
+            <legend>Skills:</legend>
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="js" id="js">
+            <label for="js">JavaScript</label>
+        </fieldset>
+        <br/>
+
+        <label for="highEdu">Highest Education:</label>
+        <select name="highEdu" id="highEdu">
+            <option value="highSchool">High School</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="graduation">Graduation</option>
+            <option value="masters">Post Graduation</option>
+        </select>
+        <br/>
+        <br/>
+
+        <fieldset>
+            <legend>Availability:</legend>
+            <input type="radio" name="radio" id="fullname">
+            <label for="fulltime">Full-time</label>
+            <br/>
+
+            <input type="radio" name="radio" id="part-time">
+            <label for="part-time">Part-time</label>
+        </fieldset>
+        <br/>
+        <br/>
+
+        <label for="comment">Additional Comments:</label>
+        <br/>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write here..."></textarea>
+
+        <input type="submit" value="Submit Application">
+    </form>
+    
+</body>
+</html>

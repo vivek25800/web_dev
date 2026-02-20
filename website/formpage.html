@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormExample</title>
+</head>
+<body>
+
+    <h2 style="background-color: aqua;">Event Registration</h2>
+
+    <form>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+        <br/>
+        <br/>
+
+        <label for="eamil">Email:</label>
+        <input type="email" name="eamil" id="eamil" required />
+        <br/>
+        <br/>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" required />
+        <br/>
+        <br/>
+ 
+        <label for="dob">Date Of Birth</label>
+        <input type="date" name="dob" id="dob" required />
+        <br/>
+        <br/>
+
+        <label for="occupation">Occupation:</label>
+        <select name="occupation" id="occupation">
+            <option value="student">Student</option>
+            <option value="profrssion">Profession</option>
+            <option value="others">Others</option>
+        </select>
+        <br/>
+        <br/>
+
+        <fieldset>
+            <legend>Topic Of Interests</legend>
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="js" id="js">
+            <label for="js">JavaScript</label>
+        </fieldset>
+        <br/>
+
+        <label for="textfield1">Comments</label>
+        <br/>
+        <textarea name="textfield1" id="textfield1" cols="30" rows="10" placeholder="Write here..."></textarea>
+        <input type="submit" value="Register">
+
+    </form>
+    
+</body>
+</html>

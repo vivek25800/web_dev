@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#firstheading {
+    background-color: aqua;
+    /* border-style: solid;
+    border-color: blue;
+    border-radius: 5px; */
+
+    border: solid blue 5px;
+    /* border-radius: 5px; */
+    /* border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px; */
+
+}
+
+.firstClass {
+
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    box-sizing: border-box;
+
+}
+
+.secondClass {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0.227);
+
+    border-style: solid;
+    border-color: darkgreen;
+    border-width: 2px;
+
+    /* padding: 90px;
+    margin: 90px; */
+}

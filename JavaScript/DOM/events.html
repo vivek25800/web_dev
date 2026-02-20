@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            /* border: #000 solid 2px; */
+            border-radius: 1rem;
+            width: fit-content;
+            height: fit-content;
+            width: 600px;
+            /* text-align: center; */
+            padding: 1rem 5rem;
+            margin-top: 14rem;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        label{
+            display: block;
+            font-size: 20px;
+            margin: 1rem 0;
+        }
+        h1{
+            color: crimson;
+            margin: 2rem auto;
+            font-weight: 700;
+            text-align: center;
+        }
+        input{
+            height: 3rem;
+            width: 18rem;
+            padding: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        input[type="text"]:focus{
+            border-radius: 1.5rem;
+            padding: 15px;
+            border: crimson solid 2px;
+            border-color: crimson;
+            outline: none;
+        }
+        .add-btn{
+            height: 3rem;
+            width: 8rem;
+            cursor: pointer;
+            background-color: rgb(19, 19, 110);
+            color: #ffffff;
+            margin-left: 1rem;
+            /* border: none; */
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            /* box-shadow: ; */
+            transition: all 0.3s ease;
+        }
+        .add-btn:hover{
+            border-radius: 1.5rem;
+        }
+        ul{
+            padding: 1rem 2rem;
+            margin: 1.5rem 0;
+            /* border: #000 solid 1px; */
+            width: fit-content;
+            border-radius: 8px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+        }
+        li{
+            line-height: 2rem;
+        }
+        ul li button{
+            background-color: #ffffff;
+            /* border: none;     */
+            height: 1.5rem;
+            width: 4rem;
+            margin-left: 1rem;
+            border: maroon solid 1px;
+            color: maroon;
+            border-radius: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        ul li button:hover{
+            background-color: maroon;
+            color: #ffffff;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- <button onclick="console.log('button was clicked'); console.log('My name is Vivek Gupta')">Click Me</button> -->
+
+    <!-- <h1>Use of 'this' in event Listener</h1>
+    <h3>let's demo it on elements</h3>
+    <p>This is the sample paragraph</p> -->
+
+    <!-- <input type="text" placeholder="type something">
+    <button> Click Me </button> -->
+
+    <!-- <form action="/action">
+        <input type="text" id="user" placeholder="username">
+        <input type="password" id="pass" placeholder="password">
+        <button>Submit</button>
+    </form> -->
+
+    <!-- activity -->
+    <!-- <h2>My Text Editor</h2>
+     <p></p>
+     <div class="color-div" style="height: 100px; width: 100px; border: #000 solid 2px; margin-bottom: 20px;"></div>
+     <label for="text" style="display: block; margin-bottom: 10px;">Enter color code:</label>
+     <input type="text" placeholder="type something" id="text" /> -->
+
+    <!-- - mouseout -->
+    <!-- <ul id="test">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ul> -->
+
+    <!-- - Keypress -->
+    <!-- <div>
+            <label for="sample">Focus the input and type something:</label>
+            <input type="text" placeholder="type something" id="sample" />
+        </div>
+        <p id="para"></p> -->
+
+    <!-- -- Event Bubbling -- -->
+    <!-- <div style="background-color: pink; height: 200px; width: 400px;">
+            <ul style="background-color: blue;">
+                <li style="background-color: yellow;">item 1</li>
+                <li style="background-color: yellow;">item 2</li>
+                <li style="background-color: yellow;">item 3</li>
+            </ul>
+         </div> -->
+
+    <!-- == Activity - Todo app == -->
+     <div class="container">
+        <h1>Todo App</h1>
+        <label for="tasks">Add you tasks:</label>
+          <input type="text" placeholder="enter your tasks" id="tasks"/>
+          <button class="add-btn">Add Task</button>
+          <ul>
+            <li>Eat <button class="delete">delete</button></li>
+            <li>Sleep <button class="delete">delete</button></li>
+          </ul>
+     </div>
+        
+
+    <script src="DOMEvents.js"></script>
+    
+</body>
+</html>

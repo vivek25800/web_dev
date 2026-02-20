@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination with Courses</title>
+  <link rel="stylesheet" href="pagination.css">
+</head>
+<body>
+  <div class="carousel">
+    <div class="carousel-inner">
+      <div class="course-section">
+        <h2>Section 1: Frontend Development</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="course-section">
+        <h2>Section 2: Backend Development</h2>
+        <ul>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+      <div class="course-section">
+        <h2>Section 3: Data Science</h2>
+        <ul>
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>NumPy</li>
+        </ul>
+      </div>
+    </div>
+    <ul class="pagination">
+      <li class="prev-btn"><a href="#" onclick="moveCarousel(-1)">❮ Previous</a></li>
+      <li><a href="#" onclick="goToPage(1)">1</a></li>
+      <li><a href="#" onclick="goToPage(2)">2</a></li>
+      <li><a href="#" onclick="goToPage(3)">3</a></li>
+      <li class="next-btn"><a href="#" onclick="moveCarousel(1)">Next ❯</a></li>
+    </ul>
+  </div>
+
+  <script src="pagination.js"></script>
+</body>
+</html>

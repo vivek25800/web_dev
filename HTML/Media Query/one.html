@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parentContainer{
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+        }
+        .firstContainer{
+            border: 1px solid black;
+            background-color: aquamarine;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 3px;
+            padding: 3px;
+        }
+        /* .box{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+            padding: 3px;
+        } */
+        .secondContainer{
+            border: 1px solid black;
+            background-color: yellow;
+            width: 50%;
+            margin: 2px;
+            padding: 2px;
+        }
+        img{
+            margin: 3px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+        }
+        p{
+            border: 1px solid red;
+        }
+
+        @media (max-width: 640px){
+            .parentContainer{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parentContainer">
+        <div class="firstContainer">
+            <p>text 1</p>
+            <p>Text 2</p>
+        </div>
+
+        <div class="secondContainer">
+            <img src="puppy.jpg" alt="puppy">
+        </div>
+    </div>
+    
+</body>
+</html>
