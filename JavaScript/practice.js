@@ -158,9 +158,9 @@
 // let name = prompt("Enter you name:");
 // console.log(name);
 
-let firstName = prompt("Enter your firstname: ");
-let lastName = prompt("Enter your last name: ");
-console.log("Hello " + firstName + "  " + lastName + "!")
+// let firstName = prompt("Enter your firstname: ");
+// let lastName = prompt("Enter your last name: ");
+// console.log("Hello " + firstName + "  " + lastName + "!")
 
 
 
