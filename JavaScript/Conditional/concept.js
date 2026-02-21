@@ -191,13 +191,14 @@
 // If username & password correct → Login successful
 // Else → Invalid credentials
 
-const username = "admin";
-const password = "admin123";
-if(username === "admin" && password === "admin123" ) {
-    console.log("Login successful");
-} else {
-    console.log("Invalid credentials");
-}
+// const username = "admin";
+// const password = "admin123";
+// if(username === "admin" && password === "admin123" ) {
+//     console.log("Login successful");
+// } else {
+//     console.log("Invalid credentials");
+// }
+
 
 // Check age group:
 // 0–12 → Child
@@ -205,46 +206,232 @@ if(username === "admin" && password === "admin123" ) {
 // 20–59 → Adult
 // 60+ → Senior
 
+// let yourAge = 4;
+// if(yourAge >= 0 && yourAge <= 12) {
+//     console.log("Child");
+// } else if(yourAge >= 13 && yourAge <= 19) {
+//     console.log("Teen");
+// } else if(yourAge >= 20 && yourAge <= 59) {
+//     console.log("Adult");
+// } else{
+//     console.log("Senior");
+// }
+
 // 🔹 Level 3: Using Logical Operators (&&, ||)
 
 // Check if a number is between 10 and 50.
+// let num = 51;
+// if(num >=  10 && num <= 50) {
+//     console.log(num + " is between 10 and 50");
+// } else {
+//     console.log(num + " is not between 10 and 50");
+// }
+
 
 // Check if a person can get a loan:
 // Age > 21
 // Salary > 25,000
+// let age = 25, youSalary = 25001;
+// if (age > 20 && youSalary > 25000) {
+//     console.log("You can get a loan");
+// } else {
+//     console.log("You cannot get a loan");
+// }
 
 // Check if a student passed:
 // Marks ≥ 35 in all subjects
+// let physicsMarks = 35, mathMarks = 35, chemistryMarks = 35;
+// if(physicsMarks >= 35 && chemistryMarks >= 35 && mathMarks >= 35) {
+//     console.log("You passed the exam");
+// } else {
+//     console.log("You failed the exam");
+// }
 
 // Check if a number is divisible by 3 and 5 both.
+// let num = 20;
+// if(num % 3 === 0 && num % 5 === 0) {
+//     console.log(`${num} is divisible by 3 and 5 both`);
+// } else {
+//     console.log(`${num} is not divisible by 3 and 5 both`);
+// }
+
+// let num = 10;
+// if(num % 3 === 0 && num % 5 === 0) {
+//     console.log(`${num} is divisible by 3 and 5 both`);
+// } else if( num % 3 === 0 && num % 5 !== 0) {
+//     console.log(`${num} is divisible by 3 but not divsible by 5`);
+// } else if(num % 3 !== 0 && num % 5 === 0) {
+//     console.log(`${num} is divisible by 5 but not divisible by 3`);
+// } else {
+//     console.log(`${num} is not divisible by 3 and 5 both`);
+// }
+
 
 // 🔹 Level 4: Using switch
 
 // Create a calculator:
 // +, -, *, /
+// let num1 = 10, num2 = 0;
+// let operator = "/";
+// let result;
+// if(operator === "+") {
+//     result = num1 + num2;
+// } else if(operator === "-") {
+//     result = num1 - num2;
+// } else if(operator === "*") {
+//     result = num1 * num2;
+// } else if(operator === "/") {
+//     if(num2 !== 0) {
+//         result = num1 / num2;
+//     } else {
+//         result = "Cannot divide by zero";
+//     }
+// } else {
+//     result = "Invalid operator";
+// }
+
+// console.log("Result: " + result);
+
+// Using switch statement for the same calculator:
+// let num1 = 10, num2 = 0;
+// let operator = "/";
+// let result;
+// switch(operator) {
+//     case "+":
+//         result = num1 + num2;
+//         break;
+//     case "-":
+//         result = num1 - num2;
+//         break;
+//     case "*":
+//         result = num1 * num2;
+//         break;
+//     case "/":
+//         result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+//         break;
+//     default:
+//         result = "Invalid operator"; 
+// }
+
+// console.log("Result: " + result);
+
 
 // Print day of the week based on number (1–7).
+// const day = 10;
+// switch(day) {
+//     case 1:
+//         console.log("Sunday");
+//         break;
+//     case 2:
+//         console.log("Monday");
+//         break;
+//     case 3:
+//         console.log("Tuesday");
+//         break;
+//     case 4:
+//         console.log("Wednesday");
+//         break;
+//     case 5:
+//         console.log("Thursday");
+//         break;
+//     case 6:
+//         console.log("Friday");
+//         break;
+//     case 7:
+//         console.log("Saturday");
+//         break;
+//     default:
+//         console.log("Invalid number");
+// }
+
 
 // Create a traffic light system:
 // Red → Stop
 // Yellow → Ready
 // Green → Go
+// let trafficLight = "yellow";
+// switch(trafficLight) {
+//     case "red":
+//         console.log("Stop");
+//         break;
+//     case "yellow":
+//         console.log("Ready");
+//         break;
+//     case "green":
+//         console.log("Go");
+//         break;
+//     default:
+//         console.log("Broken light");
+// }
 
 // 🔹 Level 5: Ternary Operator Practice
+// ==========================================================
+// Syntax: condition ? expressionIfTrue : expressionIfFalse
+// ==========================================================
 
 // Check if number is even or odd using ternary.
+// let number = 21;
+// let result = (number % 2 === 0) ? "Even number" : "Odd number";
+// console.log(result);
+
+
 // Check if age ≥ 18 → "Adult" else "Minor".
+// let age = 19;
+// let ageResult = (age >= 18) ? "Adult" : "Minor";
+// console.log(ageResult);
+
+
 // Find greater between two numbers using ternary.
+// let num1 = 10, num2 = 5;
+// let result = (num1 > num2) ? `${num1} is greater tha ${num2}` : `${num2} is greter than ${num1}`;
+// console.log(result);
+
+
 // Check if temperature > 30 → "Hot" else "Normal".
+// let temp = 31;
+// let tempResult = (temp > 3) ? "Hot" : "Normal";
+// console.log(tempResult);
+
 
 // 🔹 Small Mini Challenges (Fun Practice)
 
 // Check if a number is multiple of 7 or 11.
+// let num = 71;
+// if(num % 7 === 0 || num % 11 === 0) {
+//     console.log(`${num} is a multiple of 7 or 11`);
+// } else {
+//     console.log(`${num} is not multple of 7 or 11`);
+// }
+
+
 // Check if a password length is at least 8 characters.
+// let password = "pass";
+// if (password.length >= 8) {
+//     console.log("Password is strong");
+// } else {
+//     console.log("Password lenght is atleast 8 characters");
+// }
+
+
 // Check if a number is a three-digit number.
+// let num = 10;
+// if(num >= 100 && num <= 999) {
+//     console.log("This number is a three-digit number");
+// } else {
+//     console.log("This number is not a three-digit number");
+// }
+
 // Create a simple discount system:
 // If amount > 1000 → 10% discount
 // Else → No discount
+// let amount = 1111;
+// if(amount > 1000) {
+//     console.log("You get 10% discount");
+// } else if(amount > 500) {
+//     console.log("You get 5% discount");
+// } else {
+//     console.log("No discount for you");
+// }
 
 
 
