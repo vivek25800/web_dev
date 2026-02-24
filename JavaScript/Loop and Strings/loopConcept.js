@@ -101,6 +101,25 @@
 // }
 
 // 🔹 Do While loop 
+/*
+Initialization
+do {
+    Loop body statements
+    Updation // i++
+} while(condition)
+*/
+
+// let i = 1;
+// do {
+//     console.log(i);
+//     i++;
+// } while(i <= 10)
+
+// let i = 10;
+// do {
+//     console.log(i);
+//     i--;
+// } while(i >= 1)
 
 
 
@@ -247,31 +266,78 @@
 // console.log("Reversed: " + reversed);
 
 // Check if a number is prime.
-let num = 20;
-let isPrime = true;
-if(num <= 1) {
-    isPrime = false;
-} else {
-    for(let i = 2; i < num; i++){
-        if(num % i === 0) {
-            isPrime = false;
-            break;
-        }
-    }
-}
-console.log(isPrime ? "Prime": "Not Prime")
+// let num = 20;
+// let isPrime = true;
+// if(num <= 1) {
+//     isPrime = false;
+// } else {
+//     for(let i = 2; i < num; i++){
+//         if(num % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+// }
+// console.log(isPrime ? "Prime": "Not Prime");
 
 // Print all prime numbers between 1 and 50.
+// for(let num = 1; num <= 50; num++) {
+//     let isPrime = true;
+
+//     for(let i = 2; i < num; i++) {
+//         if(num % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if(isPrime) {
+//         console.log(num);
+//     }
+// }
+
 
 // 🔹 Level 4: Loop with Strings
 
 // Count the number of vowels in a string.
+// let str = "Vivek Gupta";
+// let count = 0;
+// for(let i = 0; i < str.length; i++) {
+//     let ch = str[i].toLowerCase();
+//     if(ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u') {
+//         count++;
+//     }
+// }
+// console.log("Total vowels: ", count);
 
 // Reverse a string.
+// let str = "Vivek Gupta";
+// let reverse = "";
+// for(let i = str.length - 1; i >= 0; i--) {
+//     reverse += str[i];
+// }
+// console.log(reverse);
 
 // Count how many times a letter appears in a word.
+// let str = "vivek gupta";
+// let letter = 'v';
+// let count = 0;
+// for(let i = 0; i <= str.length; i++){
+//     if(str[i] === letter){
+//         count++;
+//     }
+// }
+// console.log("letter appear: ", count);
+
 
 // Check if a string is a palindrome.
+let str = "vivek";
+let reverse = "";
+for(let i = str.length - 1; i >= 0; i--){
+    reverse += str[i];
+}
+let ans = (str === reverse) ? "Palindrome" : "Not Palindrome";
+console.log(ans);
+
 
 // 🔹 Level 5: Nested Loop Practice
 

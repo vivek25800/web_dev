@@ -290,7 +290,7 @@
 //     console.log(`${num1}, ${num2} and ${num3} have different last digit`);
 // }
 
-// Strning Methods in JS
+// String Methods in JS
 // Trim methods
 // let msg = "    vivek    ";
 // msg.trim()
