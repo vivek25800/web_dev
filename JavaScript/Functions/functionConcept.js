@@ -104,6 +104,7 @@ performs a task or calculates a CSSMathValue. */
 // Write a function that converts Celsius to Fahrenheit.
 // Write a function to check palindrome.
 // Write a function to generate Fibonacci series.
+// Write a function to return the sum of 1 to n.
 
 // 1_ Write a function to find factorial.
 // function findFactorial(num) {
@@ -195,20 +196,30 @@ performs a task or calculates a CSSMathValue. */
 // checkPalindrome("vivek");
 
 // 8_ Write a function to generate Fibonacci series.
-const  generateFibonacci = (num) => {
-    let a = 0, b = 1, next;
-    console.log(a);
-    if(num <= 0) {
-        console.log("Please enter a positive number");
+// const  generateFibonacci = (num) => {
+//     let a = 0, b = 1, next;
+//     console.log(a);
+//     if(num <= 0) {
+//         console.log("Please enter a positive number");
+//     }
+//     if(num > 1) {
+//         console.log(b);
+//     }
+//     for(let i = 3; i <= num; i++) {
+//         let next = a + b;
+//         console.log(next);
+//         a = b;
+//         b = next;
+//     }
+// }
+// generateFibonacci(20);
+
+// 9_ Write a function to return the sum of 1 to n.
+function returnSum(num) {
+    let sum = 0;
+    for(let i = 1; i <= num; i++) {
+        sum  += i;
     }
-    if(num > 1) {
-        console.log(b);
-    }
-    for(let i = 3; i <= num; i++) {
-        let next = a + b;
-        console.log(next);
-        a = b;
-        b = next;
-    }
+    return sum;
 }
-generateFibonacci(20);
+console.log(`Sum of 1 to ${15} is: ${returnSum(15)}`);
