@@ -250,7 +250,7 @@
 
 // ====== Higher Order Functions =======
 // =====================================
-//Afunctin that does one or both
+//A functin that does one or both
 // -> takes one or multiple function as arguments.
 
 // function multipleGreet(func, n){  // Higher Order function 

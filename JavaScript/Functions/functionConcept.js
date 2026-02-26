@@ -215,11 +215,63 @@ performs a task or calculates a CSSMathValue. */
 // generateFibonacci(20);
 
 // 9_ Write a function to return the sum of 1 to n.
-function returnSum(num) {
-    let sum = 0;
-    for(let i = 1; i <= num; i++) {
-        sum  += i;
-    }
-    return sum;
-}
-console.log(`Sum of 1 to ${15} is: ${returnSum(15)}`);
+// function returnSum(num) {
+//     let sum = 0;
+//     for(let i = 1; i <= num; i++) {
+//         sum  += i;
+//     }
+//     return sum;
+// }
+// console.log(`Sum of 1 to ${15} is: ${returnSum(15)}`);
+
+// // Create a Function that returns the concatenation of all strings in an array.
+// const cncatenateStrings = () => {
+//     let arr = ["Hello", " ", "World", "!"]
+//     let result = "";
+//     for(let i = 0; i < arr.length; i++) {
+//         result += arr[i];
+//     }
+//     return result;
+// }
+// console.log(cncatenateStrings());
+
+// Lexical Scope -> A variable defined outside a function can be accesible inside another function defined after the variable declaration.
+// function outerFunction() {
+//     let x = 10;
+//     let y = 20;
+//     function innerFunction() {
+//         console.log(`Sum of x and y: ${x + y}`);
+//     }
+//     innerFunction();
+// }
+// outerFunction();
+
+// function outerFunction() {
+//     function innerFunction() {
+//         console.log(`Sum of num1 and num2: ${num1 + num2}`);
+//     }
+//     let num1 = 10, num2 = 20;
+//     innerFunction();
+// }
+// outerFunction();
+
+// Higher order function -> A function that takes another function as argument or returns a function is called higher order function.
+// Example - 
+// function greetMyName(func, name) {
+//     console.log(`${func()} ${name}`);
+// }
+
+// const greet = function() {
+//     console.log("Hello");
+// }
+
+// greetMyName(greet, "Vivek");
+// // greetMyName(() => "Hello", "Vivek");
+
+
+
+
+
+
+
+
