@@ -330,13 +330,13 @@ do {
 
 
 // Check if a string is a palindrome.
-let str = "vivek";
-let reverse = "";
-for(let i = str.length - 1; i >= 0; i--){
-    reverse += str[i];
-}
-let ans = (str === reverse) ? "Palindrome" : "Not Palindrome";
-console.log(ans);
+// let str = "vivek";
+// let reverse = "";
+// for(let i = str.length - 1; i >= 0; i--){
+//     reverse += str[i];
+// }
+// let ans = (str === reverse) ? "Palindrome" : "Not Palindrome";
+// console.log(ans);
 
 
 // 🔹 Level 5: Nested Loop Practice

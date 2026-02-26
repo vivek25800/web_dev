@@ -92,9 +92,9 @@
 // console.log(`My name is ${firstName} and I am ${age} year old.`);
 
 // Split in JS - split()
-let str = "Hello Vivek Gupta";
-let words = str.split(" ");
-console.log(words); // ['Hello', 'Vivek', 'Gupta']
+// let str = "Hello Vivek Gupta";
+// let words = str.split(" ");
+// console.log(words); // ['Hello', 'Vivek', 'Gupta']
 
 
 // 🔥 Practice Questions for You
@@ -176,6 +176,7 @@ console.log(words); // ['Hello', 'Vivek', 'Gupta']
 //     }
 // }
 // console.log(result);
+// console.log(str.length);
 
 // 8. Find longest word in a sentence.
 // let str = "I love Javascript";
@@ -187,7 +188,6 @@ console.log(words); // ['Hello', 'Vivek', 'Gupta']
 //     }
 // }
 // console.log("Longest word: ", longest);
-
 
 // 🔹 Project: Simple Password Strength Checker
 
@@ -216,6 +216,53 @@ console.log(words); // ['Hello', 'Vivek', 'Gupta']
 // }
 
 // 🔥 Build a mini text analyzer project
+
+// let text = "JavaScript is powerful. JavaScript is fun to learn!";
+// let charCount = text.length;
+// let words = text.split(" ").filter(word => word !== "");
+// let wordCount = words.length;
+// let sentenceCount = text.split(/[.!?]/).filter(s => s.trim() !== "").length;
+// // Count vowels
+// let vowelCount = 0;
+// let vowels = "aeiouAEIOU";
+// for (let i = 0; i < text.length; i++) {
+//     if (vowels.includes(text[i])) {
+//         vowelCount++;
+//     }
+// }
+// // Find longest word
+// let longestWord = "";
+// for (let word of words) {
+//     if (word.length > longestWord.length) {
+//         longestWord = word;
+//     }
+// }
+// // Most frequent character
+// let frequency = {};
+// let maxChar = "";
+// let maxCount = 0;
+// for (let char of text) {
+//     if (char !== " ") {
+//         frequency[char] = (frequency[char] || 0) + 1;
+
+//         if (frequency[char] > maxCount) {
+//             maxCount = frequency[char];
+//             maxChar = char;
+//         }
+//     }
+// }
+// console.log("Characters:", charCount);
+// console.log("Words:", wordCount);
+// console.log("Sentences:", sentenceCount);
+// console.log("Vowels:", vowelCount);
+// console.log("Longest Word:", longestWord);
+// console.log("Most Frequent Character:", maxChar);
+
+
+
+
+
+
 
 
 

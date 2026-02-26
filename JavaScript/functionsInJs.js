@@ -7,7 +7,6 @@
 // function hello() {
 //     console.log("Hello! Welcome to the Narnia group.");
 // }
-
 // hello();
 // hello();
 // hello();
@@ -21,7 +20,6 @@
 //     console.log(`you roll no is: ${rollNo}`);
 //     console.log(`you address is: ${address}`);
 // }
-
 // studentDetail();
 
 // function factorial() {
@@ -34,7 +32,6 @@
 
 //     console.log(`the factorial is: ${fact}`);
 // }
-
 // factorial();
 
 // Create a function that prints a poem.
@@ -43,7 +40,6 @@
 //     console.log("How i wonder what you are");
 // }                 
 // printPoem();
-
 
 // Create a function to roll a dice & always display the value of dice (1 to 6).
 // function rollDice() {
