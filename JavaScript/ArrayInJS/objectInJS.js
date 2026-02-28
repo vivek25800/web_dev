@@ -48,6 +48,9 @@
 //     },
 // }
 // console.log(student.greet());
+// student.greet();
+// console.log(typeof(student)); // object
+
 
 // let sumOfTwoNumbers = {
 //     num1: 10,
@@ -70,6 +73,31 @@
 // console.log(employee.address);
 // console.log(employee.address.city); // print "Noida"
 // console.log(employee.address.pincode); // print 12542
+
+// Shollow copy and Deep copy in object
+// A shallow copy duplicates only the top-level properties, while a deep copy duplicates all levels of the object, including nested structures.
+// let original = {
+//     name: "Vivek",
+//     address: {
+//         city: "Noida",
+//         pincode: 12345
+//     }
+// };
+// let shallowCopy = {...original}; // Shallow copy using spread operator
+// console.log(shallowCopy);
+// console.log(original === shallowCopy); // print false, different objects
+// console.log(original.address === shallowCopy.address); // print true, same nested object
+
+// let original2 = [
+//     { id: 1, name: "Vivek" },
+//     { id: 2, name: "Vinay" }
+// ];
+// let shallowCopy2 = [...original2];
+// // Now change a nested property
+// shallowCopy2[0].name = "Rohit";
+// console.log(original2[0].name); // print "Rohit", because shallow copy shares the same nested object
+// shallowCopy2[1].id = 5; // change id of 2nd object in shallowCopy2
+// console.log(original2);
 
 // Object.keys(), Object.values(), object.entries()
 // let car = {
