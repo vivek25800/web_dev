@@ -8,7 +8,7 @@
 // }
 // console.log(personDetails);
 
-// Accessing object propeerties
+// Accessing object properties
 // Dot notation
 // console.log(personDetails.name); // print "Vivek"
 // console.log(personDetails.age); // print 25
@@ -22,7 +22,7 @@
 // Adding new properties 
 // personDetails.country = "India";
 // console.log(personDetails.country); // print "India"
-// console.log(personDetails["country"]);
+// console.log(personDetails["country"]); // print India
 
 // // Updating properties
 // personDetails.age = 26;
@@ -33,10 +33,11 @@
 // // Deleting properties
 // delete personDetails.city;
 // console.log(personDetails.city); // print undefined
+// console.log(personDetails); 
 
 // Checking if a property exists
 // console.log("name" in personDetails); // print true
-// console.log("city" in personDetails); // print false
+// console.log("country" in personDetails); // print false
 
 // Object with Function (method)
 // let student = {
@@ -56,7 +57,7 @@
 //         return this.num1 + this.num2;
 //     },
 // }
-// console.log(sumOfTwoNumbers.sum());
+// console.log("Sum of num1 and num2 is: ", sumOfTwoNumbers.sum());
 
 // Nested Object
 // let employee = {
@@ -156,8 +157,60 @@
 // };
 // console.log(Object.entries(student).length);
 
+// 4. Convert object to array.
+// let student = {
+//     name: "Vivek",
+//     age: 25,
+//     city: "Noida"
+// };
+
+// let keyArray = Object.keys(student);
+// console.log(keyArray); // print ["name", "age", "city"]
+
+// let valueArray = Object.values(student);
+// console.log(valueArray); // print ["Vivek", 25, "Noida"]
+
+// let entriesArray = Object.entries(student);
+// console.log(entriesArray); // print [["name", "Vivek"], ["age", 25], ["city", "Noida"]]
 
 
+// 5. Merge two objects.
+// let obj1 = {
+//     name: "Vivek",
+//     age: 25
+// };
+// let obj2 = {
+//     city: "Noida",
+//     country: "India"
+// };
+// let mergedObj = {...obj1, ...obj2};
+// console.log(mergedObj);
+
+// 6. Check if property exists in object.
+// let student = {
+//     name: "Vivek",
+//     age: 25,
+//     city: "Noida"
+// }
+// console.log("name" in student);
+// console.log("country" in student);
+
+// 7. Find highest value property in object.
+// let marks = {
+//     math: 85,
+//     science: 90,
+//     english: 92
+// };
+// let highestMarks = 0;
+// let subjectWithHighestMarks = "";
+// for(let subject in marks) {
+//     if(marks[subject] > highestMarks) {
+//         highestMarks = marks[subject];
+//         subjectWithHighestMarks = subject;
+//     }
+// }
+// console.log("Subject with highest marks: ", subjectWithHighestMarks);
+// console.log("Highest marks: ", highestMarks);
 
 
 
