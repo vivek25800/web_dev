@@ -134,7 +134,9 @@
 //     country: "India"
 // }
 // let count = Object.keys(student).length;
+// let valueCount = Object.values(student).length;
 // console.log("Number of properties: ", count);
+// console.log("Number of values: ", valueCount);
 
 // Using for in loop
 // let student = {
@@ -142,7 +144,7 @@
 //     age: 25,
 //     city: "Noida",
 //     country: "India"
-// }
+// };
 // let count = 0;
 // for(let key in student) {
 //     count++;
@@ -194,6 +196,7 @@
 // }
 // console.log("name" in student);
 // console.log("country" in student);
+// console.log(student.hasOwnProperty("age"));
 
 // 7. Find highest value property in object.
 // let marks = {
