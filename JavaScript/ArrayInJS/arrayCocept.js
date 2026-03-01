@@ -275,16 +275,71 @@
 // Includes in JS - The includes() method in JavaScript is used to check whether an array contains a specific value. It returns a boolean result
 // Syntax - arr.includes(searchElement, fromIndex);
 
-let arr = [10, 20, 30];
-console.log(arr.includes(20)); // print true
-console.log(arr.includes(40)); // print false
+// let arr = [10, 20, 30];
+// console.log(arr.includes(20)); // print true
+// console.log(arr.includes(40)); // print false
+// console.log(arr.includes(10)); // print true
 
+// ==========================================================================
 
+// ForeEach in JS array - forEach() is used to loop through an array.
+// It executes a function once for each element in the array.
+// It does NOT return a new array.
+// It does NOT change the original array (unless you manually modify it).
+// Syntax - 
+// Array.forEach(function(element, index, array) {
+//     // code here
+// });
+// element - current item
+// index - current index (optional)
+// array - full array (optional)
 
+// Printing elements of an array
+// let arr = [10, 20, "Vivek", null, true];
+// arr.forEach( function(num) {
+//     console.log(num);
+// });
 
+// Using arrow function
+// arr.forEach( (num) => {
+//     console.log(num);
+// });
+// arr.forEach( num => console.log(num) );
 
+// Using Index
+// let arr = [10, 20, "Vivek", null, true];
+// arr.forEach( (num, index) => {
+//     console.log(index + ": " + num);
+// });
 
+// Important things about forEach - 
+// It does not return anything
+// You cannot break or continue
 
+// ====================================================================================
+
+// Array with function 
+// Example - 
+let arr = [10, 20, 30, 40, 50];
+let getSum = (arr) => {
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+// passing array (arr) in function
+console.log("Sum of array: ", getSum(arr));
+
+// Using forEach method
+function getSum2(arr) {
+    let sum = 0;
+    arr.forEach((num) => {
+        sum += num;
+    });
+    return sum;
+}
+console.log("Sum of array: ", getSum2(arr));
 
 
 
