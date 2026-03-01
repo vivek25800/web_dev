@@ -4,7 +4,7 @@
 
 // let num = numbers[2];
 
-//Empty array
+// Empty array
 // let empArr = [];
 // console.log(empArr.length);
 // console.log([].length);

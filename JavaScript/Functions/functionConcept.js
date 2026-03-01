@@ -206,7 +206,7 @@ performs a task or calculates a CSSMathValue. */
 //         console.log(b);
 //     }
 //     for(let i = 3; i <= num; i++) {
-//         let next = a + b;
+//         next = a + b;
 //         console.log(next);
 //         a = b;
 //         b = next;
