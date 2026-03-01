@@ -200,6 +200,7 @@
 // ===============================================================================
 
 // Reduce in JS - reduce() is used to reduce an array to a single value.
+// reduce() is used to transform an array into a single value by applying a function on each element and accumulating the result.
 // Syntax - array.reduce( function(total, currentValue, currentIndex, arr), initialValue )
 // Or 
 // array.reduce((accumulator, currentValue) => {
@@ -226,11 +227,40 @@
 // console.log(sum);
 
 // Find maximum number
-let numbers = [5, 10, 30, 20];
-let max = numbers.reduce( (largest, num) => {
-    return num > largest ? num : largest;
-}, numbers[0]);
-console.log(max);
+// let numbers = [50, 10, 30, 20];
+// let max = numbers.reduce( (largest, num) => {
+//     return num > largest ? num : largest;
+// }, numbers[0]);
+// console.log(max);
+
+// =======================================================================
+
+// Sort in JS - The sort() method in JavaScript is used to arrange array elements in a specific order.
+// Syntax - array.sort(compareFunction)
+
+// let arr = [23, 19, 34, 50, 40];
+// let sortExample = arr.sort();
+// console.log(sortExample);
+// console.log(arr.toReversed());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
