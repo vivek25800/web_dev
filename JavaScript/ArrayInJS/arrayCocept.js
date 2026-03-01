@@ -176,6 +176,18 @@
 // });
 // console.log(ansArray);
 
+// Return odd numbers
+// let ansArray2 = arr.filter( (num) => {
+//     // if(num % 2 !== 0) {
+//     //     return true;
+//     // } else {
+//     //     return false;
+//     // }
+
+//     return num  % 2 !== 0;
+// });
+// console.log(ansArray2);
+
 // Filter only string type value in an array
 // let arr = [10, 20, "Vivek", true, "Gupta", null];
 // let strArray = arr.filter( (str) => {
@@ -240,12 +252,32 @@
 
 // let arr = [23, 19, 34, 50, 40];
 // let sortExample = arr.sort();
-// console.log(sortExample);
-// console.log(arr.toReversed());
+// console.log("Array sort in ascending order: ", sortExample);
 
+// // Sort in descending order 
+// let sortExample2 = arr.sort();
+// console.log("Array sort in descending order: ", sortExample2.toReversed());
 
+// ==========================================================================
 
+// IndexOf in JS - The indexOf() method in JavaScript is used to find the position of the first occurrence of a specific value in an array.
+// Syntax - arr.indexOf(searchElement, fromIndex);
 
+// let arr = [10, 20, 30, 40];
+// console.log("Index of 20 element: ", arr.indexOf(20));
+// console.log("Index of 40 element: ", arr.indexOf(40));
+
+// // Check index of a element which not present in array
+// console.log("Index of 60 element: ", arr.indexOf(60)); // print -1   If the value is not present, it returns -1.
+
+// ==========================================================================
+
+// Includes in JS - The includes() method in JavaScript is used to check whether an array contains a specific value. It returns a boolean result
+// Syntax - arr.includes(searchElement, fromIndex);
+
+let arr = [10, 20, 30];
+console.log(arr.includes(20)); // print true
+console.log(arr.includes(40)); // print false
 
 
 
