@@ -316,36 +316,68 @@
 // It does not return anything
 // You cannot break or continue
 
+let numbers = [10, 20, 30];
+let result = numbers.forEach(num => num * 2);
+console.log(result);
+
 // ====================================================================================
 
 // Array with function 
 // Example - 
-let arr = [10, 20, 30, 40, 50];
-let getSum = (arr) => {
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-    }
-    return sum;
-}
-// passing array (arr) in function
-console.log("Sum of array: ", getSum(arr));
+// let arr = [10, 20, 30, 40, 50];
+// let getSum = (arr) => {
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+// // passing array (arr) in function
+// console.log("Sum of array: ", getSum(arr));
 
-// Using forEach method
-function getSum2(arr) {
-    let sum = 0;
-    arr.forEach((num) => {
-        sum += num;
-    });
-    return sum;
-}
-console.log("Sum of array: ", getSum2(arr));
+// // Using forEach method
+// function getSum2(arr) {
+//     let sum = 0;
+//     arr.forEach((num) => {
+//         sum += num;
+//     });
+//     return sum;
+// }
+// console.log("Sum of array: ", getSum2(arr));
 
+// For-in and For-of method 
+// Example - For-in
+// Used to loop over keys(property names)
+// let person = {
+//     name: "Vivek",
+//     age: 25,
+//     city: "New York" 
+// };
+// for(let key in person) {
+//     console.log(key);
+//     console.log(person[key]);
+// }
 
+// Using with Array (Not recommended)
+// let arr = [10, 20, 39, 40];
+// for(let index in arr) {
+//     console.log(index);
+//     console.log(arr[index]);
+// }
 
+// Example - For-of
+// Ex with Array 
+// let numbers = [10, 20, 30, 40];
+// for(let value of numbers) {
+//     console.log(value);
+// }
+// It directly gives values (clean & recommended)
 
-
-
+// Ex with String
+// let str = "Vivek Gupta";
+// for(let char of str) {
+//     console.log(char);
+// }
 
 
 
