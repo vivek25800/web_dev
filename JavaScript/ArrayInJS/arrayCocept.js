@@ -316,9 +316,9 @@
 // It does not return anything
 // You cannot break or continue
 
-let numbers = [10, 20, 30];
-let result = numbers.forEach(num => num * 2);
-console.log(result);
+// let numbers = [10, 20, 30];
+// let result = numbers.forEach(num => num * 2);
+// console.log(result);
 
 // ====================================================================================
 
