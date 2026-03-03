@@ -379,6 +379,70 @@
 //     console.log(char);
 // }
 
+// =============================================================================
+
+// Conacat in JS array - concat()
+// Merges two or more arrays
+// Does not change original array
+// Syntax - first_Array.concat(second_Array)
+// Example - 
+
+// let arr1 = [10, 20, 30, 40];
+// let arr2 = ["Vivek", null, 50, 60, true];
+// let result = arr1.concat(arr2);
+// console.log("First array: ", arr1);
+// console.log("Second array: ", arr2);
+// console.log("After concat two array: ", result);
+
+// ================================================================================
+
+// Join method - join()
+// Converts array to string
+// You choose separater
+// Syntax - join() or join(separator)
+// Example - 
+
+// let elements = ["Fire", "Air", "Water"];
+// console.log("Original array: ", elements);
+// console.log(elements.join());
+// console.log(elements.join(" "));
+// console.log(elements.join("-"));
+
+// ============================================================================
+
+// Reverse method - reverse()
+// Reverse the array 
+// Change original array
+// Syntax - reverse()
+// Example - 
+
+let arr = [10, 20, "Vivek", null, undefined];
+console.log("Original array: ", arr);
+let reversedArray = arr.reverse();
+console.log("After reverse: ", reversedArray);
+
+// Careful: reverse is destructive -- it changes the original array.
+console.log("Now original array: ", arr);
+
+// ================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
