@@ -416,19 +416,50 @@
 // Syntax - reverse()
 // Example - 
 
-let arr = [10, 20, "Vivek", null, undefined];
-console.log("Original array: ", arr);
-let reversedArray = arr.reverse();
-console.log("After reverse: ", reversedArray);
+// let arr = [10, 20, "Vivek", null, undefined];
+// console.log("Original array: ", arr);
+// let reversedArray = arr.reverse();
+// console.log("After reverse: ", reversedArray);
 
-// Careful: reverse is destructive -- it changes the original array.
-console.log("Now original array: ", arr);
+// // Careful: reverse is destructive -- it changes the original array.
+// console.log("Now original array: ", arr);
 
 // ================================================================================
 
+// Length method - length()
+// Returns number of elements
+// Syntax - array.length
+// Example - 
 
+// let arr = [20, 30, 40, 50];
+// console.log(arr.length); // print 4
+// arr.unshift("Vivek", "Gupta", false);
+// console.log(arr.length); // print 7
 
+// =====================================================================================
 
+// Fill method - fil()
+// Fills array with a value
+// Modifies original array
+// Syntax - 
+// array.fill(value)
+// array.fill(value, start)
+// arrar.fill(value, start, end)
+// Example - 
+
+let arr = [10, 20, 39, 40, 60, 90];
+console.log("Original array: ", arr);
+console.log(arr.fill(100)); // [100, 100, 100, 100, 100, 100]
+
+// Fill 80 from position 2
+console.log(arr.fill(80, 2)); // [100, 100, 80, 80, 80, 80]
+
+// Fill with 0 from position 2 untill 4
+console.log(arr.fill(0, 2, 4)); // [100, 100, 0, 0, 80, 80]
+
+// =======================================================================================
+
+// 
 
 
 
