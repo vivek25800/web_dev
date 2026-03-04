@@ -140,7 +140,13 @@ let first = arr[0];
 let ans = first(10, 10); // print 20
 console.log(ans);
 
+let second = arr[1];
+let ans2 = second(20, 12);
+console.log(ans2);
 
+let third = arr[2];
+let ans3 = third(4, 5);
+console.log(ans3);
 
 
 
