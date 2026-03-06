@@ -1,5 +1,7 @@
 // Classes are atempleate for creating objects.
 // Classes in JS are built on prototypes but also have some syntax and semantics that are uniques to classes.
+// Instead of creating many similar objects manually, we use a class to define their structure once.
+
 // Example - 
 
 class Human {
@@ -12,7 +14,7 @@ class Human {
     // Behaviour 
     walking() {
         console.log("I am walking");
-        console.log(this.#weight);
+        console.log(this.#weight); // print 80
     }
 
     running() {
