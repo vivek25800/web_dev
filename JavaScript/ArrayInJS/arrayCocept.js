@@ -447,15 +447,15 @@
 // arrar.fill(value, start, end)
 // Example - 
 
-let arr = [10, 20, 39, 40, 60, 90];
-console.log("Original array: ", arr);
-console.log(arr.fill(100)); // [100, 100, 100, 100, 100, 100]
+// let arr = [10, 20, 39, 40, 60, 90];
+// console.log("Original array: ", arr);
+// console.log(arr.fill(100)); // [100, 100, 100, 100, 100, 100]
 
-// Fill 80 from position 2
-console.log(arr.fill(80, 2)); // [100, 100, 80, 80, 80, 80]
+// // Fill 80 from position 2
+// console.log(arr.fill(80, 2)); // [100, 100, 80, 80, 80, 80]
 
-// Fill with 0 from position 2 untill 4
-console.log(arr.fill(0, 2, 4)); // [100, 100, 0, 0, 80, 80]
+// // Fill with 0 from position 2 untill 4
+// console.log(arr.fill(0, 2, 4)); // [100, 100, 0, 0, 80, 80]
 
 // =======================================================================================
 

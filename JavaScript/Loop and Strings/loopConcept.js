@@ -328,7 +328,6 @@ do {
 // }
 // console.log("letter appear: ", count);
 
-
 // Check if a string is a palindrome.
 // let str = "vivek";
 // let reverse = "";
@@ -364,7 +363,8 @@ do {
 // 123
 // 1234
 // 12345
-// 🔥 Mini Challenges
+
+// Mini Challenges
 
 // Find the largest number in an array.
 

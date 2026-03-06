@@ -1,6 +1,6 @@
 // ======== Call Stack in JavaScript ========
 // Call means when we call the functions, and Stack is a data structure which is tempararilly 
-//  store the function call and when function done its work it is automatically delete from stack.
+// store the function call and when function done its work it is automatically delete from stack.
 // Example ->
 // function hello() {
 //     console.log("inside hello function.")
