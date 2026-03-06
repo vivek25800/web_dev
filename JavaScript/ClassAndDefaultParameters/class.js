@@ -111,7 +111,25 @@ const obj = new Person("Vivek", 25);
 console.log("My name is", obj.name);
 console.log("My age", obj.age);
 
+// Constructor + Method
+// Example - 
+class Car {
+    constructor(brand, model) {
+        this.brand = brand;
+        this.model = model;
+    }
 
+    carStart() {
+        console.log(this.brand + " car started");
+    }
+
+    carStop() {
+        console.log(this.brand + " car stoped");
+    }
+}
+const object = new Car("BMW", "X7");
+object.carStart();
+object.carStop();
 
 
 
