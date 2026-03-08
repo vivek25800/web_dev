@@ -341,36 +341,111 @@ do {
 // 🔹 Level 5: Nested Loop Practice
 
 // Print this pattern:
-
 // *
 // **
 // ***
 // ****
 // *****
+
+// for(let i = 1; i <= 5; i++) {
+//     let pattern = "";
+//     for(let j = 1; j <= i; j++) {
+//         pattern += "* ";
+//     }
+//     console.log(pattern);
+// }
 
 // Print this pattern:
-
 // *****
 // ****
 // ***
 // **
 // *
 
-// Print a number pattern:
+// for(let i = 5; i >= 1; i--) {
+//     let pattern = "";
+//     for(let j = 1; j <= i; j++){
+//         pattern += "* ";
+//     }
+//     console.log(pattern);
+// }
 
+// Print this number
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+// for(let i = 1; i <= 5; i++) {
+//     let pattern = "";
+//     // Print spaces
+//     for(let j = 1; j <= 5 - i; j++){
+//         pattern += " ";
+//     }
+//     // Now print stars
+//     for(let k = 1; k <= i; k++){
+//         pattern += "*";
+//     }
+//     console.log(pattern);
+// }
+
+// Print a number pattern:
 // 1
 // 12
 // 123
 // 1234
 // 12345
 
+// for(let i = 1; i <= 5; i++) {
+//     let pattern = "";
+//     for(let j = 1; j <= i; j++) {
+//         pattern += j + " ";
+//     }
+//     console.log(pattern);
+// }
+
+
 // Mini Challenges
 
 // Find the largest number in an array.
+// let arr = [45, 73, 23, 89, 12, 46, 100];
+// let maxNumber = arr[0];
+// for(let i = 1; i < arr.length; i++) {
+//     if(arr[i] > maxNumber) {
+//         maxNumber = arr[i];
+//     }
+// }
+// console.log("Largest number: ", maxNumber);
+
+// // Shorter modern JS way
+// let arr2 = [45, 73, 23, 89, 12, 46, 75];
+// console.log("Largest number: ", Math.max(...arr2));
 
 // Count how many positive and negative numbers are in an array.
+// let arr = [29, -34, 4, 65, -34, -56, 10];
+// let positive = 0;
+// let negative = 0;
+// arr.forEach(num => {
+//     if(num > 0) positive++;
+//     else negative++;
+// });
+// console.log("Total positive: ", positive);
+// console.log("Total negative: ", negative);
 
 // Remove duplicate numbers from an array.
+let arr = [1, 2, 3, 3, 2, 4, 5, 6, 4];
+let unique = [];
+for(let i = 0; i < arr.length; i++) {
+    if(!unique.includes(arr[i])) {
+        unique.push(arr[i]);
+    }
+}
+console.log(unique);
+
+// Sorter method using Set function
+let uniqqueArray = [...new Set(arr)];
+console.log(uniqqueArray);
 
 // Print Fibonacci series up to 10 terms.
 
