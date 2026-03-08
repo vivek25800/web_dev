@@ -434,21 +434,28 @@ do {
 // console.log("Total negative: ", negative);
 
 // Remove duplicate numbers from an array.
-let arr = [1, 2, 3, 3, 2, 4, 5, 6, 4];
-let unique = [];
-for(let i = 0; i < arr.length; i++) {
-    if(!unique.includes(arr[i])) {
-        unique.push(arr[i]);
-    }
-}
-console.log(unique);
+// let arr = [1, 2, 3, 3, 2, 4, 5, 6, 4];
+// let unique = [];
+// for(let i = 0; i < arr.length; i++) {
+//     if(!unique.includes(arr[i])) {
+//         unique.push(arr[i]);
+//     }
+// }
+// console.log(unique);
 
-// Sorter method using Set function
-let uniqqueArray = [...new Set(arr)];
-console.log(uniqqueArray);
+// // Sorter method using Set function
+// let uniqqueArray = [...new Set(arr)];
+// console.log(uniqqueArray);
 
 // Print Fibonacci series up to 10 terms.
-
+let num = 20;
+let a = 0, b = 1;
+for(let i = 1; i <= num; i++) {
+    console.log(a);
+    let next = a + b;
+    a = b;
+    b = next;
+}
 
 
 
