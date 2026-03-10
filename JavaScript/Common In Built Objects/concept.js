@@ -43,6 +43,13 @@ console.log(Math.sqrt(100)); // print 10
 console.log(Math.cbrt(27)); // print 3
 console.log(Math.cbrt(125)); // print 5
 
+// Absolute and Sign Functions
+
+// Returns positive value
+console.log(Math.abs(-10)); // print 10
+console.log(Math.abs(-15)); // print 15
+
+
 
 
 
