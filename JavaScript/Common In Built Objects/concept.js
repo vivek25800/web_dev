@@ -32,26 +32,34 @@ console.log("Hello Duniya");
 // Power and Root Functions
 
 // Power of number
-console.log(Math.pow(4,5)); // print 1024
-console.log(Math.pow(2,3)); // print 8
+// console.log(Math.pow(4,5)); // print 1024
+// console.log(Math.pow(2,3)); // print 8
 
-// Square root
-console.log(Math.sqrt(16)); // print 4
-console.log(Math.sqrt(100)); // print 10
+// // Square root
+// console.log(Math.sqrt(16)); // print 4
+// console.log(Math.sqrt(100)); // print 10
 
-// Cube root
-console.log(Math.cbrt(27)); // print 3
-console.log(Math.cbrt(125)); // print 5
+// // Cube root
+// console.log(Math.cbrt(27)); // print 3
+// console.log(Math.cbrt(125)); // print 5
 
-// Absolute and Sign Functions
+// // Absolute and Sign Functions
 
-// Returns positive value
-console.log(Math.abs(-10)); // print 10
-console.log(Math.abs(-15)); // print 15
+// // Returns positive value
+// console.log(Math.abs(-10)); // print 10
+// console.log(Math.abs(-15)); // print 15
 
+// Retirns sign of number
+console.log(Math.sign(-10)); // print -10
+console.log(Math.sign(12)); // print 12
 
+// Random Number
 
-
+// Return random number between 0 and 1.
+console.log(Math.random());
+// Return random number between 0 and 10.
+console.log(Math.random() * 10) + 1;
+console.log(Math.trunc(Math.random() * 10) + 1);
 
 
 
