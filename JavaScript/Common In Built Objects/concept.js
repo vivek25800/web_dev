@@ -63,23 +63,23 @@ console.log("Hello Duniya");
 
 // Real Data and time
 
-let curr = new Date();
-console.log(curr);
-console.log("Year: " + curr.getFullYear()); // print Year: 2026
-console.log("Month: " + (curr.getMonth() + 1)); // print Month: 3
-console.log("Date: " + curr.getDate()); // print Date: 17
-console.log("Day: " + curr.getDay()); // print Day: 2
-console.log("Hours: " + curr.getHours()); // print Hours: 17
-console.log("Minutes: " + curr.getMinutes());
-console.log("Seconds: " + curr.getSeconds());
+// let curr = new Date();
+// console.log(curr);
+// console.log("Year: " + curr.getFullYear()); // print Year: 2026
+// console.log("Month: " + (curr.getMonth() + 1)); // print Month: 3
+// console.log("Date: " + curr.getDate()); // print Date: 17
+// console.log("Day: " + curr.getDay()); // print Day: 2
+// console.log("Hours: " + curr.getHours()); // print Hours: 17
+// console.log("Minutes: " + curr.getMinutes());
+// console.log("Seconds: " + curr.getSeconds());
 
-// As an argument
-let date = new Date("May 25 1999 16:35");
-console.log(date);
+// // As an argument
+// let date = new Date("May 25 1999 16:35");
+// console.log(date);
 
-// As an Parameter
-let newDate = new Date(1999, 4, 10, 7)
-console.log(newDate);
+// // As an Parameter
+// let newDate = new Date(1999, 4, 10, 7)
+// console.log(newDate);
 
 
 
