@@ -27,7 +27,7 @@
 // let dest = {...src}; // Spread opereator used
 // // here's maming changes in src main object
 // src.address = "Noida sec 66";
-// // here's update only src object not chneges in dest obj
+// // here's chnages in only src object not chneges in dest obj
 // console.log("src: ", src);
 // console.log("Dest: ", dest);
 
