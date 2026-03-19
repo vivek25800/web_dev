@@ -8,8 +8,16 @@
 // Example -
 
 const el = document.getElementById('title');
-// console.log(el);
+const items = document.getElementsByClassName('item');
+const btn = document.querySelector("#btn, .item");
+const all = document.querySelectorAll("#item, #btn");
 
+// let cont = document.getElementsByClassName('container');
+// console.log(cont);
+// console.log(cont.innerHTML);
+
+// Change Content and Inner Text
+// Modify text or HTML inside elements
 
 
 
