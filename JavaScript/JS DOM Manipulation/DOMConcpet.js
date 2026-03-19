@@ -24,4 +24,3 @@ const all = document.querySelectorAll("#item, #btn");
 
 
 
-

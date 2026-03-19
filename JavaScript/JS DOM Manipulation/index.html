@@ -7,21 +7,22 @@
 </head>
 <body>
 
-    <h2 id="title">JS DOM Manipulation</h2>
+    <!-- <h2 id="title">JS DOM Manipulation</h2>
 
-    <!-- <p class="item">This is Paragraph</p>
+    <p class="item">This is Paragraph</p>
     <button id="btn">Click me</button>
     <button id="btn">Click me</button>
 
     <h5 id="item">Hello i am h5</h5>
     <h6 id="item">Hello i am h6</h6>
+    <h6 id="item">Hello i am h7</h6>
 
-    <div class="container">
+    <div class="container1">
         <p>Hello everyone</p>
         <h6>I am heading</h6>
     </div> -->
 
-    <script src="DOMConcpet.js"></script>
+    <!-- <script src="DOMConcpet.js"></script> -->
 
     <div class="container">
         <p id="fpara">
@@ -33,10 +34,70 @@
         </p>
     </div>
 
+    <div style="padding: 3rem; background-color: yellow;">
+        Hello Vivek
+        <div id="newContainer" style="padding: 3rem; background-color: aqua;">
+            <p id="firstPara">First para</p>
+            <h3>Second h3</h3>
+            <p>Second para</p>
+        </div>
+    </div>
+
+
     <script>
-        // Text Content
-        const myPara = document.querySelector("#fpara");
+
+        // Get element by ID
+        let el = document.getElementById('title');
+        console.log(el);
+
+        // Get element by Class name
+        let el2 = document.getElementsByClassName('item');
+        console.log(el2);
+
+        // querySelector
+        let el3 = document.querySelector("#title");
+        console.log(el3);
+
+        // querySelectorAll
+        let el4 = document.querySelectorAll("#item");
+        console.log(el4);
+        
+        let myPara = document.querySelector("#fpara");
         console.log(myPara);
+        let myDiv = document.querySelector(".container");
+        console.log(myDiv);
+        // Text Content
+        console.log(myDiv.textContent); // All text content in container
+
+        // Inner Text
+        console.log(myPara.innerText); // print- This is first para
+
+        // Inner HTML
+        let innerHtml = myPara.innerHTML = "<h6> Hello h6 </h6>";
+        console.log(innerHtml);
+
+        // Add new Element 
+        let newElement = document.createElement("button");
+        newElement.innerText = "Click me";
+        myDiv.appendChild(newElement);
+
+        // insertAdjacentElement - insert an new element according to your location.
+        let newDiv = document.querySelector('#newContainer');
+        console.log(newDiv);
+        // first create new element
+        let newEl = document.createElement('h2');
+        newEl.textContent = "Hello i am H2";
+        // console.log(newEl);
+        newDiv.insertAdjacentElement('beforebegin', newEl);
+
+        // remove element - removeChild()
+        let childElement = document.querySelector("#firstPara");
+        console.log(childElement);
+        // parent container - #newContainer
+        newDiv.removeChild(childElement);
+        
+
+
     </script>
     
     
