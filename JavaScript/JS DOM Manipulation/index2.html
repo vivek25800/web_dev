@@ -52,11 +52,30 @@
         console.log(sDivElement.className); // secondDiv
         console.log(fDivElement.className); // firstDiv
         // After change
-        fDivElement.className = "firstClass firstClass2"; // multiple class
-        sDivElement.classList = "secondClass";
-        console.log(fDivElement.className); // firstClass
-        console.log(sDivElement.className); // secondClass
-        
+        // fDivElement.className = "firstClass firstClass2"; // multiple class
+        // sDivElement.classList = "secondClass";
+        // console.log(fDivElement.className); // firstClass
+        // console.log(sDivElement.className); // secondClass
+
+        // Class list - classList
+        console.log(fDivElement.classList); // DOMTokenList(2) ['firstDiv', 'firstClass2', value: 'firstDiv firstClass2']
+        console.log(sDivElement.classList); // DOMTokenList ['secondDiv', value: 'secondDiv']
+        // Add class
+        fDivElement.classList.add('firstClass3');
+        sDivElement.classList.add('secondClass2');
+        console.log(fDivElement.classList); // DOMTokenList(3) ['firstDiv', 'firstClass2', 'firstClass3', value: 'firstDiv firstClass2 firstClass3']
+        console.log(sDivElement.classList); // DOMTokenList(2) ['secondDiv', 'secondClass2', value: 'secondDiv secondClass2']
+        // Remove class
+        fDivElement.classList.remove('firstClass2');
+        sDivElement.classList.remove('secondDiv');
+        // Toggle class
+        fDivElement.classList.toggle('firstClass2'); // add class if not exist or remove class if exist
+        console.log(fDivElement.classList); // DOMTokenList(3) ['firstDiv', 'firstClass3', 'firstClass2', value: 'firstDiv firstClass3 firstClass2']
+        sDivElement.classList.toggle('secondClassDiv'); // add class if not exist or remove class if exist
+        console.log(sDivElement.classList); // DOMTokenList(3) ['secondClass2', 'secondClassDiv', value: 'secondClass2 secondClassDiv']
+        // Check if class exist
+        console.log(fDivElement.classList.contains('firstClass2')); // true
+        console.log(sDivElement.classList.contains('secondClass')); // true
 
     </script>
     
