@@ -4,16 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events in DOM</title>
+
+    <style>
+        .firstDiv, .secondDiv, .thirdDiv {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #outer, #middle, #inner {
+            border: 1px solid red;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Events in DOM</h1>
+    <h1>Events listener in DOM</h1>
     <p>In JavaScript, an event listener is a function that waits for a specific action to occur on a web page—such as a click, key press, or window resize—and then executes code in response</p>
-    <button id="buttonClick">Show my Name</button>
-    <h4 id="myName"></h4>
 
-    <button id="anotherButton">Change the text</button>
-    <p id="myText">Hello my name is Vivek!</p>
+
+    <div class="firstDiv">
+        <p># Show the text by clicking on button</p>
+        <button id="buttonClick">Show my Name</button>
+        <h4 id="myName"></h4>
+    </div>
+    
+
+    <!-- Change the text of a Paragraph -->
+    <div class="secondDiv">
+        <p># Here change the text by clicking on button</p>
+        <button id="anotherButton">Change the text</button>
+        <p id="myText">Hello my name is Vivek!</p>
+    </div>
+   
+
+    <!-- Phases in JavaScript Events -->
+    <div class="thirdDiv">
+        <p># Understanding Event Phases</p>
+        <div id="outer">
+            outer
+            <div id="middle">
+                middle
+                <button id="inner"> Inner CLick Me</button>
+            </div>
+        </div>
+    </div>
+    
 
     <script src="eventListener.js"></script>
     
