@@ -9,25 +9,13 @@
 
     <h1>Events in DOM</h1>
     <p>In JavaScript, an event listener is a function that waits for a specific action to occur on a web page—such as a click, key press, or window resize—and then executes code in response</p>
-    <button id="buttonClick">Click Me</button>
+    <button id="buttonClick">Show my Name</button>
+    <h4 id="myName"></h4>
 
-    <script>
+    <button id="anotherButton">Change the text</button>
+    <p id="myText">Hello my name is Vivek!</p>
 
-        // Syntax for adding an event listener
-        // element.addEventListener(type, listener)
-        // element.addEventListener(type, listener, options)
-        // element.addEventListener(type, listener, useCapture)
-
-        // Example: Adding a click event listener to a button
-        // Get the button element
-        let button = document.getElementById('buttonClick');
-
-        // Add an event Listener to the button
-        button.addEventListener('click', function() {
-            alert('Button was clicked!');
-            console.log('Button was clicked!');
-        })
-    </script>
+    <script src="eventListener.js"></script>
     
 </body>
 </html>
